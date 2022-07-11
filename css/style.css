@@ -1,0 +1,58 @@
+body{
+    background-color: #2d3436;
+    text-align: center;  /*텍스트의 정렬 방향을 의미함*/
+    color: #ecf0f1;
+    padding:1%;
+}
+h1{
+    font-size: 112px;
+    margin-top:13%;
+    margin-bottom:0px;
+}
+input{
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    margin: 3px;
+    text-align: center;
+    color: #ecf0f1;
+    border-bottom: 2px solid #ecf0f1;
+}
+ul {
+    margin-left: 40%;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    text-align:left;
+    color: #ecf0f1;
+}
+/* .btn{
+    cursor: pointer;
+} */
+/* cursor값으로 pointer을 입력해주면 마우스가 손가락으로 바뀜 :hover해서 {color:red}해주면
+색도 바뀌게 할 수 있음*/
+
+.hidden {
+    display: none;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* keyframes는 애니메이션을 줄수있는거 opacity는 투명도를 조정하는 방법임 */
+
+.bgImage {
+    opacity:0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
